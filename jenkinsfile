@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository containing Terraform configuration
-                git url: 'https://github.com/princegalland/terraform-pipeline-demo.git', branch: 'main'
+    
+                git branch: 'main', url: 'https://github.com/princegalland/jenkins-test.git'
             }
         }
 
